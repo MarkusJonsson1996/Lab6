@@ -141,6 +141,22 @@ int Dlinklist::search(Node* data) {
 
 	return ret;
 }
+Node* Dlinklist::node_at(unsigned int pos) {
+	Node* retNode = this->head;
+	unsigned int i = 0;
+
+	if (pos < 0) retNode = nullptr;
+	else {
+
+		while (retNode != nullptr && i != pos) {
+			retNode = retNode->get_next();
+			i++;
+		}
+
+	}
+
+	return retNode;
+}
 void Dlinklist::display_forward() {
 
 	Node* nextNode = this->head;

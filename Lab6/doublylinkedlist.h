@@ -32,7 +32,7 @@ public:
 	bool remove(unsigned int pos);
 	bool replace(Node* oldNode, Node* newNode);
 	int search(Node* data);
-	Node* at(int pos);
+	Node* node_at(unsigned int pos);
 	void display_forward();
 	void display_backward();
 	int size_of();
