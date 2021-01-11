@@ -2,8 +2,12 @@
 
 #include <math.h>
 #include <string>
+#include "SDL.h"
 
 using namespace std;
+
+#define AXIS_X  1
+#define AXIS_Y  2
 
 class Point2d {
 public:
@@ -20,7 +24,10 @@ public:
 	float get_y();
 	float set_x(float x);
 	float set_y(float y);
-	double len_to(const Point2d& thisPoint);
+
+	void rotate(Point2d* rotPoint, float angle);
+	double len_to(const Point2d& thisPoint, int axis = 0);
+	double angle(const Point2d& thisPoint);
 	string to_string();
 
 private:

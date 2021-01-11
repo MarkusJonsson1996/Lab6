@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="circle.h">
+    <ClInclude Include="doublylinkedlist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="point2d.h">
@@ -27,33 +27,27 @@
     <ClInclude Include="shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="triangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="doublylinkedlist.h">
+    <ClInclude Include="circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="circle.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="point2d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rectangle.cpp">
+    <ClCompile Include="doublylinkedlist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="triangle.cpp">
+    <ClCompile Include="rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="point2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="doublylinkedlist.cpp">
+    <ClCompile Include="circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
