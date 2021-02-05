@@ -25,9 +25,9 @@ public:
 	float set_x(float x);
 	float set_y(float y);
 
-	void rotate(Point2d* rotPoint, float angle);
+	void rotate_around(Point2d* rotPoint, float angle);
 	double len_to(const Point2d& thisPoint, int axis = 0);
-	double angle(const Point2d& thisPoint);
+	double angle_from(const Point2d& thisPoint);
 	string to_string();
 
 private:

@@ -7,7 +7,7 @@ public:
 
 	Triangle(Point2d pos, uint8_t* colorAlpha, float base, float height);
 
-	void render(SDL_Renderer* renderer);
+	//void render(SDL_Renderer* renderer);
 private:
 	float base, height;
 };

@@ -6,12 +6,13 @@ class Rectangle : public Shape {
 public:
 	Rectangle(Point2d pos, uint8_t* colorAlpha, float width, float height);
 
-	void set_angle(float angle);
-	void offset(float x, float y);
-	void render(SDL_Renderer* renderer);
+	float set_height(float height);
+	float set_width(float width);
+
+	float get_height();
+	float get_width();
 private:
 	float width, height;
-	Point2d edges[4];
 
 };
 

@@ -31,18 +31,19 @@ bool Point2d::operator!=(const Point2d& otherPoint) {
 	return !(x == otherPoint.x && y == otherPoint.y);
 }
 
-void Point2d::rotate(Point2d* rotPoint, float angle) {
+void Point2d::rotate_around(Point2d* rotPoint, float angle) {
 	//if (angle < 0)  angle += 2 * M_PI;
 	
 	double xTemp, yTemp, angleTemp;
 
-	angleTemp = angle + this->angle(*rotPoint);
+	angleTemp = angle + this->angle_from(*rotPoint);
+
 
 	xTemp = rotPoint->get_x() + this->len_to(*rotPoint) * cos(angleTemp);
 	yTemp = rotPoint->get_y() +  -1 * this->len_to(*rotPoint) * sin(angleTemp);
 
 	this->set_x(xTemp);
-	this->set_y(yTemp);	
+	this->set_y(yTemp);
 }
 float Point2d::get_x() {
 	return x;
@@ -69,7 +70,7 @@ double Point2d::len_to(const Point2d& otherPoint, int axis) {
 
 	return ret;
 }
-double Point2d::angle(const Point2d& otherPoint) {
+double Point2d::angle_from(const Point2d& otherPoint) {
 
 	float mot = otherPoint.y - this->y;
 	float nar = this->x - otherPoint.x;
